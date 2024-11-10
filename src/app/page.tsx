@@ -1,10 +1,9 @@
-import { ToogleTheme } from "@/components/custom/toogle-theme";
-// import { Button } from "@/components/ui/button";
+import { MenuBar } from "@/components/custom/menu-bar";
 
 export default function Home() {
 	return (
 		<div>
-			<ToogleTheme />
+			<MenuBar />
 		</div>
 	);
 }
