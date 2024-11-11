@@ -15,7 +15,7 @@ export default function Home() {
 			</h1>
 			<h2 className="text-md md:text-xl text-center">
 				A template for a landing page including login, signup, pricing and
-				purchase pages.
+				payment pages.
 			</h2>
 			<Button
 				variant="gradient"

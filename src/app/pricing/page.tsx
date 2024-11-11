@@ -14,6 +14,7 @@ import { Button } from "@/components/ui/button";
 import React, { useState } from "react";
 import { cn } from "@/lib/utils";
 import { plans } from "./data";
+import { useRouter } from "next/navigation";
 
 type PricingSwitchProps = {
 	onSwitch: (value: string) => void;
@@ -29,6 +30,7 @@ type PricingCardProps = {
 	actionLabel: string;
 	popular?: boolean;
 	exclusive?: boolean;
+	action?: () => void;
 };
 
 const PricingHeader = ({
@@ -65,6 +67,7 @@ const PricingCard = ({
 	actionLabel,
 	popular,
 	exclusive,
+	action,
 }: PricingCardProps) => (
 	<Card
 		className={cn(
@@ -123,6 +126,7 @@ const PricingCard = ({
 			<Button
 				variant="default"
 				className="relative inline-flex w-full items-center justify-center rounded-md  text-white  px-6 font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+				onClick={action}
 			>
 				<div className="absolute -inset-0.5 -z-10 rounded-lg bg-gradient-to-b from-[#c7d2fe] to-[#8678f9] opacity-75 blur" />
 				{actionLabel}
@@ -142,6 +146,7 @@ export default function Pricing() {
 	const [isYearly, setIsYearly] = useState(false);
 	const togglePricingPeriod = (value: string) =>
 		setIsYearly(Number.parseInt(value) === 1);
+	const router = useRouter();
 
 	return (
 		<div className="py-8">
@@ -152,7 +157,14 @@ export default function Pricing() {
 			<PricingSwitch onSwitch={togglePricingPeriod} />
 			<section className="flex flex-col sm:flex-row sm:flex-wrap justify-center gap-8 mt-8">
 				{plans.map((plan) => {
-					return <PricingCard key={plan.title} {...plan} isYearly={isYearly} />;
+					return (
+						<PricingCard
+							action={() => router.push("/payment")}
+							key={plan.title}
+							{...plan}
+							isYearly={isYearly}
+						/>
+					);
 				})}
 			</section>
 		</div>
