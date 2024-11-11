@@ -14,8 +14,8 @@ export default function Home() {
 				with using Shadcn UI.
 			</h1>
 			<h2 className="text-md md:text-xl text-center">
-				A template for a landing page including dark theme, login, signup,
-				pricing and payment pages.
+				A template for a landing page including login, signup, pricing and
+				payment pages with dark theme.
 			</h2>
 			<Button
 				variant="gradient"
