@@ -7,12 +7,16 @@ export default function Home() {
 		"font-extrabold bg-gradient-to-bl from-blue-500 to-pink-500 bg-clip-text text-transparent";
 	const router = useRouter();
 	return (
-		<div className="flex flex-col items-center justify-center h-96 gap-10 px-4">
+		<div className="flex flex-col items-center justify-center h-96 gap-5 px-4">
 			<h1 className="text-3xl md:text-5xl font-bold text-center px-6">
 				A simple <span className={gradientStyle}>Landing Page</span>
 				<br />
-				with <span className={gradientStyle}>Pricing Page</span> using Shadcn UI
+				with using Shadcn UI.
 			</h1>
+			<h2 className="text-md md:text-xl text-center">
+				A template for a landing page including login, signup, pricing and
+				purchase pages.
+			</h2>
 			<Button
 				variant="gradient"
 				size="rounded"
