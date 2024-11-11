@@ -33,6 +33,9 @@ export default function NavBar() {
 					</div>
 				</div>
 				<div className="flex items-center gap-2">
+					<Button variant="outline" onClick={() => router.push("/login")}>
+						Login
+					</Button>
 					<Button variant="default" onClick={() => router.push("/signup")}>
 						Sign Up
 					</Button>
