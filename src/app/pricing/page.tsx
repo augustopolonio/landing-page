@@ -68,7 +68,7 @@ const PricingCard = ({
 }: PricingCardProps) => (
 	<Card
 		className={cn(
-			`w-72 flex flex-col justify-between py-1 ${popular ? "border-rose-400" : "border-zinc-700"} mx-auto sm:mx-0`,
+			`w-72 flex flex-col justify-between py-1 ${popular ? "border-purple-500" : "border-zinc-700"} mx-auto sm:mx-0`,
 			{
 				"animate-backgroundShine bg-white dark:bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] transition-colors":
 					exclusive,
@@ -120,7 +120,10 @@ const PricingCard = ({
 			</CardContent>
 		</div>
 		<CardFooter className="mt-2">
-			<Button className="relative inline-flex w-full items-center justify-center rounded-md bg-black text-white dark:bg-white px-6 font-medium  dark:text-black transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+			<Button
+				variant="default"
+				className="relative inline-flex w-full items-center justify-center rounded-md  text-white  px-6 font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+			>
 				<div className="absolute -inset-0.5 -z-10 rounded-lg bg-gradient-to-b from-[#c7d2fe] to-[#8678f9] opacity-75 blur" />
 				{actionLabel}
 			</Button>
