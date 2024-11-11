@@ -1,21 +1,16 @@
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
+	const gradientStyle =
+		"font-extrabold bg-gradient-to-bl from-blue-500 to-pink-500 bg-clip-text text-transparent";
 	return (
-		<div className="flex flex-col items-center justify-center h-96 gap-12">
-			<div className="flex items-center justify-center">
-				<p className="text-6xl font-bold text-center">
-					A simple{" "}
-					<span className="text-6xl font-extrabold bg-gradient-to-bl from-blue-500 to-pink-500 bg-clip-text text-transparent">
-						Landing Page
-					</span>{" "}
-					with Pricing Page using Shadcn UI
-				</p>
-			</div>
-			<Button
-				className="bg-gradient-to-r hover:from-pink-500 hover:to-orange-500 h-14"
-				size="lg"
-			>
+		<div className="flex flex-col items-center justify-center h-96 gap-10 px-4">
+			<h1 className="text-3xl md:text-5xl font-bold text-center px-6">
+				A simple <span className={gradientStyle}>Landing Page</span>
+				<br />
+				with <span className={gradientStyle}>Pricing Page</span> using Shadcn UI
+			</h1>
+			<Button variant="gradient" size="rounded">
 				View plans
 			</Button>
 		</div>
