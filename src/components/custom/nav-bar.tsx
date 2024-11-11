@@ -32,7 +32,12 @@ export default function NavBar() {
 						</Link>
 					</div>
 				</div>
-				<ToogleTheme />
+				<div className="flex items-center gap-2">
+					<Button variant="default" onClick={() => router.push("/signup")}>
+						Sign Up
+					</Button>
+					<ToogleTheme />
+				</div>
 			</nav>
 			<Separator className="my-2" />
 		</>
