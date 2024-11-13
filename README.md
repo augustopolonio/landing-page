@@ -8,7 +8,6 @@ PS: The pricing page was based on https://github.com/m4nute/pricing-page-shadcn
 ![pricing-plans](https://github.com/user-attachments/assets/bd44a9b2-928d-4ae7-8f02-8d635a537a33)
 ![Home-dark](https://github.com/user-attachments/assets/fb11f0f2-d26b-486f-95cb-457fb4970780)
 ![pricing-plans-dark](https://github.com/user-attachments/assets/3a2eec8c-ccba-4c83-84f1-dcbce683d694)
-![pricing](https://github.com/user-attachments/assets/b0458f05-257e-470e-a2ad-be5bc3e2c430)
 ![payment](https://github.com/user-attachments/assets/d33bb1ab-f599-4044-80bb-98a1d9ee3cbf)
 ![login-dark](https://github.com/user-attachments/assets/eb40742f-3238-4c8e-bfc0-51cfc9b7d9a1)
 
